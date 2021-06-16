@@ -1,0 +1,25 @@
+div#img-cabecera {
+    background-image: url("./fotocabecera.jpeg");
+    background-position: center center;
+    height: 200px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana;
+    color: forestgreen;
+}
+
+h5 {
+    text-align: center;
+}
+
+body {
+    margin: 10%, 20%, 30%, 50%;
+}
+
+.container {
+    margin: 0 100px;
+}
+
+table {}
