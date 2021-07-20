@@ -142,3 +142,8 @@ ul.fuentes {
   list-style: disc !important;
   list-style-position: inside !important;
 }
+
+.separador {
+  border-bottom: 1px solid #999;
+  margin: 40px 0;
+}
