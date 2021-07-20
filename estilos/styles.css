@@ -1,101 +1,144 @@
 div#img-cabecera {
-    background-image: url("../Imagenes/fotocabecera.jpeg");
-    background-position: center center;
-    height: 200px;
+  background-image: url("../Imagenes/fotocabecera.jpeg");
+  background-position: center center;
+  height: 200px;
 }
 
-
 h2 {
-    text-align: center;
-    font-family: Verdana;
-    color: forestgreen;
+  text-align: center;
+  font-family: Verdana;
+  color: forestgreen;
 }
 
 h5 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 0px;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 0px;
+  font-family: verdana;
 }
 
 body {
-    background-color: #d6eaf8 !important;
-    overflow-x: hidden;
+  background-color: #d6eaf8 !important;
+  overflow-x: hidden;
 }
 
 .texto-centrado {
-    text-align: center;
+  text-align: center;
 }
 
 dl dt {
-    margin-top: 20px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .centrado {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .menu {
-    list-style: none;
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 17px;
-    background-color: #a9cce3;
+  list-style: none;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 17px;
+  background-color: #a9cce3;
 }
 
-.menu li {}
+.menu li {
+}
 
 p,
 li,
 dd {
-    text-align: justify;
+  text-align: justify;
 }
 
 .tenor-gif-embed {
-    margin-left: auto;
+  margin-left: auto;
 
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #principal {
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-
-
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
 }
 
-
-.bloqued {
-    background-color: white;
-
-
+.portada .bloqued {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 #footer {
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: #a9cce3;
-    clear: both;
-    height: 62px;
-    padding-top: 24px;
-    float: left;
-    width: 100%;
-    margin-top: 15px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #a9cce3;
+  clear: both;
+  height: 62px;
+  padding-top: 24px;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .cabecera {
-    text-align: center;
-    font-family: verdana;
-    font-size: 45px;
-    color: #67bdcb;
+  text-align: center;
+  font-family: verdana;
+  font-size: 45px;
+  color: #67bdcb;
+}
 
+.bloqued {
+  background-color: #a9cce3;
+  border: none;
+}
+
+.bloqued h5 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 29px;
+  font-family: verdana;
+}
+
+.card a:hover,
+.card a:active,
+.card a:focus,
+.card a:visited {
+  text-decoration: none;
+}
+
+.card-body h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cabecera h1 {
+  font-family: verdana;
+  color: cadetblue;
+  font-size: 50px;
+}
+
+div.img span {
+  text-align: center;
+  display: block;
+  font-size: 70%;
+}
+
+div.img img {
+  max-width: 100%;
+}
+
+ul.fuentes {
+  list-style: disc !important;
+  list-style-position: inside !important;
 }
