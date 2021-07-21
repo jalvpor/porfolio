@@ -148,8 +148,14 @@ ul.fuentes {
   margin: 40px 0;
 }
 
-.flex-center{
+.flex-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.centrar-listas {
+  text-align: center;
+  text-align: justify;
+  margin-left: 58px;
 }
