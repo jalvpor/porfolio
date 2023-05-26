@@ -1,173 +1,484 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Más que Veterinarios-Veterinaria 4.0</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link href="estilos/styles.css" rel="stylesheet" type="text/css" />
+<html lang="en">
 
-    <!-- Google -->
-    <meta name="referrer" content="always" />
-    <meta
-      name="description"
-      content="Jennifer Álvarez Portal. Veterinaria 4.0"
-    />
-    <meta
-      name="keywords"
-      content="Jennifer Álvarez Portal, Jennifer Álvarez, Jennifer, jennifer alvarez, técnico de calidad, veterinaria, web, desarrollador, HTML, CSS, creador de contenidos, redactor, redactor we, formador"
-    />
+<head>
+    <meta charset="utf-8">
+    <title>Jennifer Álvarez Portal - Porfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Jennifer Álvarezz Portal" />
-    <meta property="og:url" content="https://jalvpor.github.io/porfolio/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="fotocabecera1.jpg" />
-    <meta
-      property="og:description"
-      content="Jennifer Álvarez Portal. Veterinaria 4.0"
-    />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-29VE4LYV8Z"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+</head>
 
-      gtag("config", "G-29VE4LYV8Z");
-    </script>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary"></span></h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse"  data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#testimonial" class="nav-item nav-link">Review</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+           
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
-  </head>
 
-  <body class="portada">
-    <div class="row">
-      <div class="col-12 cabecera">
-        <h1>Veterinaria 4.0</h1>
-      </div>
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Video Modal End -->
 
-    <div class="row">
-      <div class="col-12">
-        <ul class="menu">
-          <li><a href="./index.html">Portada</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="https://jalvpor.github.io/eXelearning">Cursos</a></li>
-         
-          
-        </ul>
-      </div>
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 85vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/JENNIFER.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Soy</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Jennifer</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Docente, Contenido educativo, e-Learning</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="img/CV_alvarez_portal_ web.pdf" target="_blank" download="" class="btn btn-outline-light mr-5">Download CV</a>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Header End -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-8" id="principal">
-          <img
-            src="./Imagenes/JENNIFER.jpg"
-            alt="fotosenderismo"
-            width="275"
-            height="162"
-            style="float: left; margin: 20px 10px 10px 0;object-fit: cover;"
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Sobre mí</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Sobre mí</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100  asclepio" src="img/birrete.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Docente</h3>
+                    <p>Desarrollo contenido y colaboro en proyectos e-Learning. Tengo formación en ciencias, veterinaria, industrias alimentarias y sanidad. En mis ratos libres busco la tranquilidad con mi bicicleta, así que si eres biker estás invitado a unirte.
+                        El uso de las TIC en las aulas avanza cada vez más rápido, por eso, hay que adaptar la enseñanza a las nuevas herramientas. La formación a través de las TIC ya no es el futuro, es el ahora. </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Jennifer Álvarez Portal</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">jalvarezportal@gmail.com</span></h6></div>
+                    </div>
+                    <a href="mailto:jalvarezportal@gmail.com" class="btn btn-outline-primary mr-4">Contacta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Soft skills start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Habilidades - Soft Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="center border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Síntesis -  Curiosidad - Formación continua</h5>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Resolución de conflictos</h5>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Creatividad</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="center border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Divulgación - Docencia</h5>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Empatía</h5>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Resiliencia</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Soft skills end -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Formación</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Formación</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="center border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Máster en formación del profesorado</h5>
+                            <p class="mb-2"><strong>Universidad Camilo José Cela</strong> | <small>2023 - actualmente</small></p>
+                            <p>Máster habilitante para el ejercicio de la docencia en Edudación Secundaria, Bachillerato y Formación Profesional.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Máster en calidad, higiene y seguridad alimentaria</h5>
+                            <p class="mb-2"><strong>IMF Business School - Universidad de Nebrija</strong> | <small>2020 - 2021</small></p>
+                            <p>Máster especializado en la implantación y mejora de los estándares de calidad en la industria alimentaria. Además de ampliar conocimientos en nutrición, microbiología alimentaria, procesos industriales y legislación. </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Grado en Veterinaria</h5>
+                            <p class="mb-2"><strong>Universidad de Santiago de Compostela</strong> | <small>2014 - 2019</small></p>
+                            <p>Titulación que habilita para el ejercicio veterinario y el trabajo en otros sectores como la industria alimentaria, farmacéutica, producción y alimentación animal.  El grado se compone de tres ramas de estudio: producción animal, clínica e industria alimentaria. </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="center border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Técnico en imagen para el diagnóstico</h5>
+                            <p class="mb-2"><strong>Escuela Ramón y Cajal</strong> | <small>2011 - 2013</small></p>
+                            <p>Titulación que habilita para el ejercicio veterinario y el trabajo en otros sectores como la industria alimentaria, farmacéutica, producción y alimentación animal.  El grado se compone de tres ramas de estudio: producción animal, clínica e industria alimentaria. </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Técnico en cuidados auxiliares de enfermería</h5>
+                            <p class="mb-2"><strong>IES Joan Brudieu</strong> | <small>2009 - 2011</small></p>
+                            <p>Titulación que habilita para el ejercicio veterinario y el trabajo en otros sectores como la industria alimentaria, farmacéutica, producción y alimentación animal.  El grado se compone de tres ramas de estudio: producción animal, clínica e industria alimentaria. </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Técnico en atención sociosanitaria</h5>
+                            <p class="mb-2"><strong>IES Joan Brudieu</strong> | <small>2009 - 2011</small></p>
+                            <p>Titulación que habilita para el ejercicio veterinario y el trabajo en otros sectores como la industria alimentaria, farmacéutica, producción y alimentación animal.  El grado se compone de tres ramas de estudio: producción animal, clínica e industria alimentaria. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+        <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+            
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Conocimientos</h1>
+                    <h1 class="position-absolute text-uppercase text-primary">Conocimientos técnicos</h1>
+                </div>
+        
       
-          />
-          <p>
-            Te preguntarás ¿Qué hace una veterinaria aprendiendo a crear páginas
-            web?, pues forma parte de mi forma de ser. Soy una persona inquieta
-            que le gusta aprender y decidí aprender algo que saliera de mi zona
-            de confort. También hago algo de deporte, como son los paseos por la
-            montaña. Además me he comprado una bici y salgo de vez en cuando,
-            tengo las piernas llenas de cardenales. Otra de mis facetas es la
-            lectura, mi plan de fin de semana es sofá, manta y libro.
-          </p>
-
-          <p>
-            Y como no podía ser menos me encantan los animales, aleja a tu
-            mascota si no quieres que la llene de mimos y abrazos. Pese a eso no
-            me decante por la clínica y preferí dedicarme a la seguridad
-            alimentaria. Debido a este trabajo me he dado cuenta de la
-            importancia de la informatización de los procesos de producción y la
-            gestión de los datos. Por eso he decidido aprender más sobre
-            programación y bases de datos para poder ser una profesional más
-            completa en la industria 4.0.
-          </p>
-
-          <p>
-            Esta es mi primera página web, la cual voy a utilizar para poner en
-            práctica lo que voy
-          </p>
-        </div>
-
-        <div class="col-12 col-lg-3 offset-lg-1 pt-3 bloqued">
-          <div
-            class="LI-profile-badge"
-            data-version="v1"
-            data-size="medium"
-            data-locale="es_ES"
-            data-type="vertical"
-            data-theme="light"
-            data-vanity="jennifer-alvarez-portal-17205676"
-          >
-            <!-- <a class="LI-simple-link" href='https://es.linkedin.com/in/jennifer-alvarez-portal-17205676?trk=profile-badge'>
-                        Jennifer Álvarez Portal
-                    </a> -->
-          </div>
-
-          <h5>Últimos posts</h5>
-          <div class="card mb-3">
-            <a href="./Blog/Garrapatas/garrapatas.html">
-              <img
-                src="./Blog/Garrapatas/chicasjardin.jpg"
-                class="card-img-top"
-                alt="vaca"
-              />
-              <div class="card-body">
-                <h5 class="card-title">¡Tengo una garrapata enganchada!</h5>
-                <p class="card-text">
-                  Esa fue mi frase hace unos días cunado me estaba duchando y vi
-                  a ese animalito anclado a mi antebrazo. En esos momentos por
-                  tu cabeza empiezan a aparecer imágenes de tus clases de
-                  parasitología. Por “deformación profesional” empiezas a
-                  recordar todas y cada una de las enfermedades que pueden
-                  transmitir las garrapatas, te pones nervioso, sudas, entras en
-                  cólera...¡oh dios voy a morir!.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">23 de Julio de 2021</small>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+        <section class="habilidades" id="habilidades">
+            <div class="contenedor-habilidades">
+              <div class="first-set animate__animated animate__pulse">
+                
+              
     </div>
 
-    <div class="row" id="footer">
-      <div class="col-12">
-        <a href="https://www.linkedin.com/in/jennifer-alvarez-portal-17205676/"
-          ><i class="bi bi-linkedin"> </i
-        ></a>
-      </div>
+
+
+    <div class="row my-5">
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_html.png">
+            <p class="text-muted">HTML</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_css.png">
+            <p class="text-muted">CSS</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_bootstrap.png">
+            <p class="text-muted">Bootstrap</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_python.png">
+            <p class="text-muted">Python</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_ubuntu.png">
+            <p class="text-muted">Linux - Ubuntu</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_exelearning.png" height="100px">
+            <p class="text-muted">eXeLearning</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_moodle.png">
+            <p class="text-muted">Moodle</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_adapt.jpeg" height="100px">
+            <p class="text-muted">Adapt Learning</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="" src="img/icon_scorm.png" height="100px">
+            <p class="text-muted">Contenido SCORM</p>
+        </div>
+        
     </div>
-  </body>
+        
+        <!-- Skill End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Servicios</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mis Servicios</h1>
+            </div>
+            <h2 style="text-align: center;">PRÓXIMAMENTE</h2>
+            <br/>
+            <br/>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Tutoria - Clases particulares</h4>
+                    </div>
+                    <p>Etapas: de ESO a Bachiller.</p>
+                    <P>Materias: Biología, Geología y Ciencias Ambientales. Física y Química. Matemáticas. Tecnología y Digitalización. TIC.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href=""></a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Digitalización de contenido.</h4>
+                    </div>
+                    <p></p>
+                    <a class="border-bottom border-primary text-decoration-none" href=""></a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Administración LMS.</h4>
+                    </div>
+                    <p></p>
+                    <a class="border-bottom border-primary text-decoration-none" href=""></a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Creación de contenido.</h4>
+                    </div>
+                    <p></p>
+                    <a class="border-bottom border-primary text-decoration-none" href=""></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Blog</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Curso</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://jalvpor.github.io/porfolio/blog" target="_blank">
+                            <img class="img-fluid rounded w-50" src="img/icon_blog.png" alt="" href="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://jalvpor.github.io/eXelearning/" target="_blank">
+                            <img class="img-fluid rounded w-50" src="img/icon_exelearning.png" >
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://github.com/jalvpor" target="_blank">
+                        <img class="img-fluid rounded w-50" src="img/icon_github.png" alt="" href="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Últimas entradas</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/jennifer-alvarez-portal-17205676/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.instagram.com/jennifer_alvarez__p/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
