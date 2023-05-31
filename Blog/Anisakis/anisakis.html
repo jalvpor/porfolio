@@ -1,197 +1,233 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Más que Veterinarios-Veterinaria 4.0</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link href="../../estilos/styles.css" rel="stylesheet" type="text/css" />
+<html lang="en">
 
-    <!-- Google -->
-    <meta name="referrer" content="always" />
-    <meta
-      name="description"
-      content="Jennifer Álvarez Portal. Veterinaria 4.0"
-    />
-    <meta
-      name="keywords"
-      content="Jennifer Álvarez Portal, Jennifer Álvarez, Jennifer, jennifer alvarez, técnico de calidad, veterinaria, web, desarrollador, HTML, CSS, creador de contenidos, redactor, redactor we, formador"
-    />
+<head>
+  <meta charset="utf-8">
+  <title>Jennifer Álvarez Portal - Porfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
 
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Jennifer Álvarezz Portal" />
-    <meta property="og:url" content="https://jalvpor.github.io/porfolio/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="fotocabecera1.jpg" />
-    <meta
-      property="og:description"
-      content="Jennifer Álvarez Portal. Veterinaria 4.0"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
-  </head>
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <body class="blog">
-    <div class="row">
-      <div class="col-12 cabecera">
-        <h1>Veterinaria 4.0</h1>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="../../css/style.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-29VE4LYV8Z"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <!-- Navbar Start -->
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3">
+      <h1 class="m-0 display-5"><span class="text-primary"></span></h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+      <div class="navbar-nav m-auto py-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="index.html/#About" class="nav-item nav-link">About</a>
+        <a href="#qualification" class="nav-item nav-link">Quality</a>
+        <a href="#skill" class="nav-item nav-link">Skill</a>
+        <a href="#service" class="nav-item nav-link">Service</a>
+        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+        <a href="#testimonial" class="nav-item nav-link">Review</a>
+        <a href="#blog" class="nav-item nav-link">Blog</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Video Modal Start -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <!-- Video Modal End -->
 
-    <div class="row">
-      <div class="col-12">
-        <ul class="menu">
-          <li><a href="../../index.html">Portada</a></li>
-          <li><a href="../../blog.html">Blog</a></li>
-         
-        </ul>
-      </div>
-    </div>
 
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 50vh;">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-8" id="principal">
-          <h2>Anisakis: ¿Es suficiente con congelar?</h2>
-          <br></br>
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="titulo_blog display-1 text-uppercase text-white">VETERINARIA 4.0</h1>
+      </div>
+    </div>
 
-          <p>El anisakis (<em>Anisakis</em> sp.) es un parásito cada vez más frecuente en pescados y cefalópodos. El hombre actúa como hospedador accidental (Imagen 1) y lo adquiere por el consumo de pescado crudo o en preparaciones que no lo matan. En los últimos años también se ha visto asociado a la aparición de reacciones alérgicas.</p>
+  </div>
+  <!-- Header End -->
+
+
+  <!-- Blog Start -->
+  <div class="container-fluid pt-5" id="blog">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+        <h1 class="position-absolute text-uppercase text-primary">Últimas entradas</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8" id="principal">
+          <h2>Almejas recién salidas de la ría</h2>
+          <br></br>
+          <p>
+            Puede ser que le hayas odio esta frase a tu pescadero habitual, pero por suerte para tu intestino esas almejas no han venido directamente de la ria. Seguro que más de una vez has oído que no se debe comer los moluscos encontrados en la playa, o de las mareas rojas o de los problemas que puede acarrear comer este tipo de marisco en lugares poco salubres. Por no hablar del especial cuidado que hay que tener al consumirlos crudos como se suele hacer con las ostras. 
+          </p>
+          <br></br>
+          <p>Los moluscos bivalvos como las almejas (imagen 1) o los mejillones requieren de un proceso de depuración antes de su venta, ya que al ser organismos filtradores pueden retener en su interior toxinas (ASP, PSP,etc), metales pesados y microorganismos (Coliformes, <em>Salmonella</em> sp., etc). Este proceso de “limpieza” se realiza en depuradoras y zonas de reinstalación de mariscos, cuyos requisitos operativos y de higiene están regulados por ley.</p>
+          <br></br>
+          <div class='img centrado'><img src="./Almejas2.webp"/><span>Imagen 1: Almeja fina (<em>Ruditapes decussatus</em>) Fuente:<a href="https://es.wikipedia.org/wiki/Ruditapes_decussatus#/media/Archivo:Venerupis_decussata.jpg">De Cwmhiraeth - Trabajo propio, CC BY-SA 3.0.</a></span></div>
+          <br></br>
+          <p>
+            La legislación establece los requisitos del agua utilizada, así como del proceso y la duración del tratamiento de “limpieza” que deben pasar los moluscos para ser AFPTOS para el consumo humano.
+          </p>
+          <br></br>
+          <p>
+            El proceso viene determinado por la zona de producción donde se recolectarón, estas zonas están definidas por ley según la calidad microbiológica de sus aguas (principalmente el grado de contaminación por <em>E.coli</em>):
+          </p>
+          <br></br>
+          <ul class=" fuentes centrar-listas" >
+            <li>Zonas de tipo A: los recolectados en estas zonas son APTOS para el consumo humano directo, siempre que cumplan los criterios sanitarios (frescura y viabilidad).</li>
+            <li>Zonas de tipo B: los recolectados en estas zonas NO SON APTOS para el consumo humano directo, por lo que requieren de un tratamiento en un centro de depuración o tras un proceso de reinstalación.</li>
+            <li>Zonas de tipo C: los recolectados en estas zonas NO SON APTOS para el consumo humano directo, requieren de su reinstalación durante un periodo prolongado de al menos 2 meses, a no ser que las autoridades indiquen otra cosa y siempre cumpliendo los criterios microbiológicos y sanitarios.</li>
+
+          </ul>
+          <br></br>
+          <div class='img centrado'><img src="./Tablalmejas.png"/><span>Tabla 1: Clasificación de las zonas de producción según los resultados de E.coli.
+            Fuente:<a href="http://coli.usal.es/web/criterios/criterios_micro/otros/moluscos.html">Coli.usal</a></span></div>
+          <br></br>
+          <p>Para comprender mejor estos términos hay que aclarar que una “reinstalación” es el traslado a zonas marítimas, lagunas o estuarios durante el tiempo necesario para reducir los contaminantes que contienen los moluscos y hacerlos APTOS para consumo humano (no incluye el traslado a zonas para su posterior engorde o crecimiento). Las zonas de reinstalación deben estar claramente señalizadas y delimitadas para su uso exclusivo en la depuración natural de los bivalvos vivos. Los requisitos que deben cumplir estos emplazamientos vienen legislados en el <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32004R0853&from=ES">Reglamento 853/2004.</a></p>
+          <br></br>
+          <div class='img centrado'><img src="./mariscadora.webp"/><span>Imagen 2: Mariscadora en una zona de reinstalación de molsucos.Fuente:<a href="http://www.ipacuicultura.com/noticias/en_portada/16053/cambio_de_estrategia_del_sistema_de_reinstalacion_de_los_moluscos_de_zonas_c.html">Ipac, 1 de Agosto de 2011.</a></span></div>
+          <br></br>
+          <p>Los moluscos solo pueden ser recolectados en las zonas de producción limitadas y clasificadas por la Comunidad Autónoma correspondiente. En el caso de Galicia ninguna de las zonas de producción de bivalvos esta declarada de tipo A, como se puede ver en la <a href="https://www.xunta.gal/dog/Publicados/2019/20190423/AnuncioG0427-110419-0001_es.pdf">Orden de la Xunta</a> del 8 de abril de 2019 donde se muestra la clasificación de las distintas zonas de la costa gallega. </p>
           <br></br>
          
-          <div class='img centrado'><img src="./cicloanisakis.webp"/><span>Imagen 1:Ciclo biológico de <em>Anisakis</em> sp.Fuente:<a href="https://www.cdc.gov/dpdx/anisakiasis/index.html">CDC</a></span></div>
-          <br></br>
-          <p>La ingesta del parásito puede provocar dos tipos distintos de enfermedad:</p>
-          <br></br>
-
-            <ul class=" fuentes centrar-listas" >
-                <li>Enfermedad digestiva (Anisakiosis o anisakiasis): es un cuadro caracterizado por nauseas, fiebre, vómitos e incluso fiebre. 
-                    <ul class="fuentes centrar-listas">
-                        <li>No invasiva: es un cuadro de leve a moderado de gastritis y/o enteritis que se produce cuando las larvas no llegan a perforar la pared de la mucosa intestinal o gástrica.</li>
-                        <li>Invasiva: es un cuadro de enfermedad digestiva que puede llegar a ser grave y se produce cuando las larvas consiguen introducirse en la mucosa intestinal.</li>
-                    </ul>
-
-                </li>
-
-                <li>Alergia al anisakis: es una reacción de hipersensibilidad tipo I mediada por IgE que puede provocar desde urticaria a un shock anafiláctico.</li>
-
-            </ul>
-
-          <br></br>
-          <p>La enfermedad aparece tras la ingesta entre los 15 – 30 minutos a varias horas. En Algunas publicaciones se ha especulado que la reacción alérgica se podría producir independientemente de que el pescado estuviera congelado o bien cocinado</p>
-          <br></br>
-
-          <p>En España hay una alta prevalencia de infección por anisakis. Un estudio8 realizado sobre 868 personas elaborado por la Sociedad Española de Alergología e Inmunología Clínica se observo presencia de sensibilización contra antígenos de anisakis en un 38.1% de los pacientes que habían sufrido angioderma-urticaria. Se cree que podría her reacciones cruzadas con otros antígenos como los del marisco. La sensibilización se puede producir por inhalación o contacto con los alérgenos de anisakis, riesgo que deben tener en cuenta todas aquellas personas que manipulen pescado habitualmente10. </p>
-          <br></br>
- 
-          <div class='img centrado'><img src="./bacaladilla.png"/><span><em>Anisakis</em> sp. en el músculo de una bacaladilla (<em>Micromesistius poutassou</em>). Fuente: propia</span></div>
-          <br></br>
-
-          <p>Algunas de las medidas recomendadas por la <a href="http://AESAN (2019) recuperado en 03 de Agosto de 2020 de http://www.aecosan.msssi.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/anisakis.htm">AECOSAN</a> para evitar la infección son:</p>
-          <br></br>
           <ul class="fuentes centrar-listas">
-              <li>Comprar pescado eviscerado o retirarlas cuanto antes.</li>
-              <li>Realizar el retirado de vísceras de forma correcta, ya que la manipulación activa las larvas.</li>
-              <li>Mantener la cadena de frío, el pescado debe estar a 4ºC o menos para evitar el deterioro y la activación de las larvas (Imagen 2 y 3).</li>
-              <li>Cocinar hasta alcanzar 60ºC o más durante 1 min en toda la pieza.</li>
-              <li>Si se va a consumir crudo congelar almenos a -20 ºC durante 5 días en congelador doméstico.</li>
-           </ul>
-
-           <br></br>
- 
-           <div class='img centrado'><img src="./bacaladilla2.png"/><span>Larvas de <em>Anisakis</em> sp. en una bacaladilla a 4ºC. Fuente: propia</span></div>
-           <br></br>
-           <div class='img centrado'><img src="./bacaladilla3.png"/><span>Larvas de <em>Anisakis</em> sp. activas tras 20 min a temperatura ambiente. Fuente: propia</span></div>
-           <br></br>
-          <p>Las proteínas alergénicas del anisakis son termoestables por lo que pueden resistir tanto a la congelación como la cocción. De hecho hay un estudio1 que muestra reacciones alérgicas tras la ingesta de pescado congelado o correctamente cocinado. </p>
+            <li>Límites de Biotoxinas marinas (DA, AZA, etc) establecidos en el <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32004R0853&from=ES"> Reglamento 853/2004</a>.</li>
+            <li>Contaminantes químicos (Benzopirenos) y metales pesados (Plomo, cadmio, etc) establecidos en el <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32006R1881&from=ES">Reglamento 1881/2006.</a></li>
+            <li>Límites microbiológicos (<em>E.coli, Salmonella</em> sp.) establecidos en el <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32005R2073&from=ES">Reglamento 2073/2005.</a> </li>
+          </ul>
           <br></br>
-          <p>Pese a todo, la AECOSAN3 y numerosos estudios avalan que la congelación y el cocinado son suficientes para evitar las reacciones alérgicas y la enfermedad digestiva, concluyen que es necesario una larva viva para desencadenar la reacción.</p>
+          <div class='img centrado'><img src="./tablatoxinas.png"/><span>Tabla 2: Límites máximos de contaminantes en moluscos bivalvos.Fuente:<a href="http://www.elika.net/datos/articulos/Archivo1287/berezi@%2032%20-%20MOLUSCOS%20BIVALVOS.pdf">Elika.</a></span></div>
           <br></br>
-
-          <p>El aumento de la parasitación en los pescados (del que hablaré en otro articulo), está provocando una mayor probabilidad de exposición al parásito por lo que las infecciones y la sensibilización a anisakis todavía es objeto de estudio. </p>
+          <p>Como se puede observar el proceso que sigue la almeja que venia de la ría es largo y podría dar un par de posts más.</p>
           <br></br>
-
-          <p>En definitiva, ante este panorama las personadas alérgicas deberían realizar un correcto cocinado o evitar el pescado de su dieta, a excepción de los procedentes de piscifactoria. Actualmente no hay evidencias clínicas3 de que el parásito muerto cause alergia pero este fenómeno todavía es objeto de estudio por lo que no se puede descartar totalmente que personas previamente sensibilizadas puedan reaccionar ante antígenos del parásito muerto.</p>
+          <div class='img centrado'><img src="./lavado de almeja.jpg"/><span>Imagen 3: Proceso de lavado en una depuradora de moluscos.Fuente:<a href="https://gl.wikipedia.org/w/index.php?curid=75223https://gl.wikipedia.org/wiki/Depuraci%C3%B3n_de_moluscos#/media/Ficheiro:Depuradora_de_mexill%C3%B3n.jpg">Lameiro – Fotografía propia (self-made), Dominio público.</a></span></div>
           <br></br>
-
-
+          <p>Para terminar quiero destacar la importancia de la trazabilidad de estos productos y de los controles sanitarios en las zonas de producción, ya que las malas praxis en el sector puede suponer el riesgo de contraer toxiinfeciones alimentaria más allá de una gastroenteritis. También se pone de manifiesto la importancia de los vertidos al mar y de las condiciones de salubridad de nuestras aguas, resulta sorprendente que zonas tan famosas por el marisqueo como Galicia no tengan zonas de producción calificadas como A.</p>
+          <br></br>
+          <p>En este artículo no he entrado a considerar las toxiinfeciones que podrían provocar los virus, parásitos, toxinas, bacterias, etc, que podrían estar presentes en este tipo de marisco, pero como consejo para que el consumidor recordar siempre el cocinado correcto de los mismos y la compra productos de calidad y de procedencia conocida.</p>
+          <br></br>
 
          <p>Fuentes:</p>
             <ul class="fuentes centrar-listas">
-                <li>Audicana, M.T., Ansotegui, I.J., De Corres, L.F. y Kennedy, M.W. (2002). Anisakissimplex: dangerous-dead and alive? Trends in Parasitology, 18 (1), pp: 20-25.</li>
-                <li>AESAN (2019) recuperado en 03 de Agosto de 2020 de <a href="http://www.aecosan.msssi.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/anisakis.htm"> http://www.aecosan.msssi.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/anisakis.htm</a></li>
-                <li>AESAN .(2016). Informe del Comité Científico de la Agencia Española de Consumo, Seguridad Alimentaria y Nutrición (AECOSAN) en relación a la alergia a Anisakis. Revista del comité científico, 24, 23-33. Recuperado en 03 de agosto de 2020, de <a href="http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/ALERGIA_ANISAKIS.pdf">http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/ALERGIA_ANISAKIS.pdf</a> </li>
-                <li>AESAN .(2009). Informe del Comité Científico de la Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) sobre la incidencia de la eliminación del pescado o partes del mismo en relación con la reducción de la prevalencia de la anisakiosis humana. Revista del comité científico, 10, 19-25. Recuperado en 03 de agosto de 2020, de <a href="http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/REDUCCION_PREVALENCIA_ANISAKIOSIS.pdf"> http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/REDUCCION_PREVALENCIA_ANISAKIOSIS.pdf</a></li>
-                <li>AESAN .(2007). Informe del Comité Científico de la Agencia Española de Seguridad Alimentaria y Nutrición (AESAN) sobre medidas para reducir el riesgo asociado a la presencia de Anisakis . Revista del comité científico, 6, 59-65. Recuperado en 03 de agosto de 2020, de <a href="http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/TRATAMIENTOS_ANISAKIS.pdf">http://www.aecosan.msssi.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/informes_comite/TRATAMIENTOS_ANISAKIS.pdf</a></li>
-                <li>Caballero, M.L., Moneo, I., Gómez-Aguado, F., Corcuera, M.T., Casado, I. y Rodríguez-Pérez, R. (2008). Isolation of Ani s5, an excretory-secretory and highly heat-resistant allergen useful for the diagnosis of Anisakislarvaesensitization. Parasitology Research, 103 (5), pp: 1231-1233.</li>
-                <li>Caballero, M.L. y Moneo, I. (2004). Several allergens from Anisakissimplex are highly resistant to heat and pep-sin treatments. Journal of Parasitology Research, 93 (3), pp: 248-251.</li>
-                <li>Fernández de Corres, L., Del Pozo, M.D., Aizpuru, F. y Buendía, E. (2001) Prevalencia de la sensibilización a Anisakissimplexen tres áreas españolas en relación las diferentes tasas de consumo de pescado. Relevancia de la aler-gia a Anisakis simplex. Estudio Multicéntrico de la SEAIC. Alergología e Inmunología Clínica, 16, pp: 337-346.</li>
-                <li>González Fernández, J. (2018). Nuevos alérgenos de Anisakis simplex: estudios in silico e in vitro (Doctoral dissertation, Universidad Complutense de Madrid).</li>
-                <li>López-Serrano, M.C., Alonso Gómez, A., Moreno-Ancillo, A., Daschner, A. y Suárez de Parga, J. (2000). Anisaki-asis gastro-alérgica: Hipersensibilidad inmediata debido a parasitación por Anisakissimplex. Alergología e Inmunología Clínica, 15, pp: 230-236.</li>
-                <li>Sastre, J., LLuch-Bernal, M., Quirce, S., Arrieta, I., Lahoz, C., Del Amo, A., Fernández-Caldas, E. y Marañón, F.A. (2000). Double-blind, placebo-controlled oral challenge study with lyophilized larvae and antigen of the fish parasite Anisakis simplex. Allergy, 55, pp: 560-564</li>
-                <li>Solas, M.T., García, M.L., Rodríguez-Mahillo, A.I., González-Muñoz, M., De las Heras, C. y Tejada, M. (2008). Anisakis antigens detected in fish muscle infested with Anisakis simplex L3. Journal of Food Protection, 71 (6), pp: 1273-1276.</li>
-                <li>Vicente Pardo, José Manuel. (2016). El anisakis y sus enfermedades como enfermedad profesional. Medicina y Seguridad del Trabajo, 62(244), 223-240. Recuperado en 03 de agosto de 2020, de <a href="http://scielo.isciii.es/pdf/mesetra/v62n244/inspeccion.pdf">http://scielo.isciii.es/pdf/mesetra/v62n244/inspeccion.pdf</a></li>
-              
+                <li>Código de prácticas para el pescado y los productos pesqueros. FAO y OMS, Roma, 2012. Disponible en:<a href="http://www.fao.org/tempref/codex/Publications/Booklets/Practice_code_fish/CCFFP_2012_ES.pdf">http://www.fao.org/tempref/codex/Publications/Booklets/Practice_code_fish/CCFFP_2012_ES.pdf</a> </li>
+        
+                <li>Depuración de bivalvos: aspectos fundamentales y prácticos. FAO, Roma, 2010. Disponible en: <a href="http://www.fao.org/3/i0201s/i0201s.pdf">http://www.fao.org/3/i0201s/i0201s.pdf</a></li>
+
+                <li>Kantauri. 2001. Cetárea de mariscos. En Análisis de la aplicación de cultivos marinos en el municipio de Mutriku (91-109). Mutrikuberri SA y el Departameneto de pesca del Gobierno Vasco.</li>
+
+                <li><a href="https://www.xunta.gal/dog/Publicados/2019/20190423/AnuncioG0427-110419-0001_es.pdf">ORDEN de 8 de abril de 2019</a> por la que se modifica la Orden de 8 de septiembre de 2006 por la que se declaran y se clasifican las zonas de producción de moluscos bivalvos y otros invertebrados marinos en las aguas de competencia de la Comunidad Autónoma de Galicia.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32004R0852&from=ES">Reglamento (CE) nº 852/2004</a>del Parlamento Europeo y del Consejo, de 29 de abril de 2004, relativo a la higiene de los productos alimenticios.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32004R0853&from=ES">Reglamento (CE) nº 853/2004 </a>del Parlamento Europeo y del Consejo, de 29 de abril de 2004, por el que se establecen normas específicas de higiene de los alimentos de origen animal.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32005R2073&from=ES">Reglamento (CE) nº 2073/2005</a>de la Comisión, de 15 de noviembre de 2005, relativo a los criterios microbiológicos aplicables a los productos alimenticios.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32005R2074&from=ES">Reglamento (CE) nº 2074/2005 </a>de la Comisión, de 5 de diciembre de 2005, por el que se establecen medidas de aplicación para determinados productos con arreglo a lo dispuesto en el Reglamento (CE) nº 853/2004 del Parlamento Europeo y del Consejo y para la organización de controles oficiales con arreglo a lo dispuesto en los Reglamentos (CE) nº 854/2004 del Parlamento Europeo y del Consejo y (CE) nº 882/2004 del Parlamento Europeo y del Consejo, se introducen excepciones a lo dispuesto en el Reglamento (CE) nº 852/2004 del Parlamento Europeo y del Consejo y se modifican los Reglamentos (CE) nº 853/2004 y (CE) nº 854/2004.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32006R1881&from=ES">Reglamento (CE) nº 1881/2006 </a>de la Comisión, de 19 de diciembre de 2006, por el que se fija el contenido máximo de determinados contaminantes en los productos alimenticios.</li>
+
+                <li><a href="https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32019R0624&from=ES">Reglamento Delegado (UE) 2019/624 </a>de la Comisión, de 8 de febrero de 2019, relativo a normas específicas respecto a la realización de controles oficiales sobre la producción de carne y respecto a las zonas de producción y reinstalación de moluscos bivalvos vivos de conformidad con el Reglamento (UE) 2017/625 del Parlamento Europeo y del Consejo.</li>
+    
             </ul>
 
         </div>
-
-        <div class="col-12 col-lg-3 offset-lg-1 pt-3 bloqued">
-          <div class="row">
-            <div class="col-12">
-              <h5>Últimos posts</h5>
-              <ul>
-                <li><a href="../garrapatas.html">¡Tengo una garrapata enganchada!</a></li>
-                <li><a href="../Lengua Azul/lenguazul.html">¿Qué es la Lengua Azul?</a></li>
-                <li><a href="../Almejas/Almejas.html">Almejas recién salidas de la Ría</a></li>
-                <li><a href="../Peces toxicos/pecesadorablestoxicos.html">Peces adorables y tóxicos</a></li>
-                <li><a href="../Pescaderia/sabesloquecompras.html">¿Sabes lo que compras en la pescadería?</a></li>
-                <li><a href="../Arbovirus/arbovirus.html">ARBOVIRUS: Prepárate para oír hablar de ellos</a>
-                <li><a href="./anisakis.html">Anisakis: ¿Es suficiente con congelar?</a>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12">
-              <div
-                class="LI-profile-badge mt-5"
-                data-version="v1"
-                data-size="medium"
-                data-locale="es_ES"
-                data-type="vertical"
-                data-theme="light"
-                data-vanity="jennifer-alvarez-portal-17205676"
-              >
-                <!-- <a class="LI-simple-link" href='https://es.linkedin.com/in/jennifer-alvarez-portal-17205676?trk=profile-badge'>
-                      Jennifer Álvarez Portal
-                  </a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+      <div class="col-2"></div>
     </div>
+  </div>
+  </div>
 
-    <div class="row" id="footer">
-      <div class="col-12">
-        <a href="https://www.linkedin.com/in/jennifer-alvarez-portal-17205676/"
-          ><i class="bi bi-linkedin"> </i
-        ></a>
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container text-center py-5">
+      <div class="d-flex justify-content-center mb-4">
+        <a class="btn btn-light btn-social mr-2" target="_blank"
+          href="https://www.linkedin.com/in/jennifer-alvarez-portal-17205676/"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-light btn-social mr-2" target="_blank"
+          href="https://www.instagram.com/jennifer_alvarez__p/"><i class="fab fa-instagram"></i></a>
       </div>
+      <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved.
+        Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+      </p>
     </div>
-  </body>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Scroll to Bottom -->
+  <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="../../lib/typed/typed.min.js"></script>
+  <script src="../../lib/easing/easing.min.js"></script>
+  <script src="../../lib/waypoints/waypoints.min.js"></script>
+  <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../../lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="../../lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="../../mail/jqBootstrapValidation.min.js"></script>
+  <script src="../../mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="../../js/main.js"></script>
+</body>
+
 </html>
